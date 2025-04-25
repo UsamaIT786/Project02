@@ -272,17 +272,38 @@
   
   /* Responsive */
   @media (max-width: 768px) {
-    .hero-content {
-      flex-direction: column-reverse;
-      text-align: center;
-    }
-    .nav-links {
-      flex-direction:row;
-      gap: 10px;
-    }
-    .navbar .container {
-      flex-direction: row;
-      gap: 10px;
-    }
+  /* Navbar */
+  .navbar .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
-  
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Hero Section */
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Sections */
+  .section {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  /* Responsive images or icons */
+  .hero-image,
+  .section img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
