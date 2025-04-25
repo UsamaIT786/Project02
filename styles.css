@@ -277,7 +277,7 @@
       text-align: center;
     }
     .nav-links {
-      flex-wrap: wrap;
+      flex-direction:row;
       gap: 10px;
     }
     .navbar .container {
